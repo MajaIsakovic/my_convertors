@@ -1,3 +1,7 @@
 #loading, #results {
     display: none;
 }
+
+#uderline{
+    font-weight: 900;
+}

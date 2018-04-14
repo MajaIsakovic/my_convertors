@@ -12,50 +12,54 @@
    </head>
    <body class="bg-dark">
       <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+         <a class="navbar-brand" href="#">Converters</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
          <div class="collapse navbar-collapse text-center" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active ">
-               <a class="nav-link" href="#">Temperature Converter <span class="sr-only">(current)</span></a>
+               <a class="nav-link" href="index.html"  id="uderline">Temperature </a>
+            </li>
+            <li class="nav-item active ">
+               <a class="nav-link" href="currency.html">Currency </a>
             </li>
          </div>
       </nav>
-
       <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <div class="card card-body text-center mt-5">
-                        <h1 class="heading display-5 pb-3">Temperature Converter</h1>
-                        <form id="calc-form">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="number" class="form-control" id="input-value" placeholder="Enter value">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" id="submit1" value="Convert to Celsius" class="btn btn-dark btn-block">
-                            </div>
-                            <div class="form-group">
-                                    <input type="submit" id="submit2" value="Convert to Fahrenheit" class="btn btn-dark btn-block">
-                            </div>
-                        </form>
-                        <div id="loading" >
-                            <img src="img/giphy.gif" alt="loading..." class="container">
-                        </div> 
-                        <!-- Results -->
-                        <div id="results">
-                            <div class="form-group mt-3">
-                                <div class="input-group">
-                                    <span class="input-group-addon mr-3">Result: </span>
-                                    <input type="number" class="form-control" id="result" disabled>
-                                </div>
-                            </div>
+         <div class="row">
+            <div class="col-md-6 mx-auto">
+               <div class="card card-body text-center mt-5">
+                  <h1 class="heading display-5 pb-3">Temperature Converter</h1>
+                  <form id="calc-form">
+                     <div class="form-group">
+                        <div class="input-group">
+                           <input type="number" class="form-control" id="input-value" placeholder="Enter value">
                         </div>
-                    </div>
-                </div>
+                     </div>
+                     <div class="form-group">
+                        <input type="submit" id="submit1" value="Convert to Celsius" class="btn btn-dark btn-block">
+                     </div>
+                     <div class="form-group">
+                        <input type="submit" id="submit2" value="Convert to Fahrenheit" class="btn btn-dark btn-block">
+                     </div>
+                  </form>
+                  <div id="loading" >
+                     <img src="img/giphy.gif" alt="loading..." class="container">
+                  </div>
+                  <!-- Results -->
+                  <div id="results">
+                     <div class="form-group mt-3">
+                        <div class="input-group">
+                           <span class="input-group-addon mr-3">Result: </span>
+                           <input type="number" class="form-control" id="result" disabled>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-
+         </div>
+      </div>
       <!-- Jquery, poper, bootstrap -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="Maja Isakovic">
+      <link rel="icon" href="img/favicon_sun.png">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+      <title>Currency Convertor</title>
+   </head>
+   <body class="bg-light">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+         <a class="navbar-brand" href="#">Converters</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse text-center" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ">
+               <a class="nav-link" href="index.html">Temperature </a>
+            </li>
+            <li class="nav-item active ">
+               <a class="nav-link" href="currency.html" id="uderline">Currency </a>
+            </li>
+         </div>
+      </nav>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 mx-auto">
+               <div class="card card-body text-center mt-5">
+                  <h1 class="heading display-5 pb-3">Currency Converter</h1>
+                  <form id="curency-form">
+                     <div class="row">
+                        <div class="col-md-6 col-xs-6 ">
+                           <div class="form-group">
+                              <label for="from">From:</label>
+                              <input type="number"  name="from" id="from" class="form-control">
+                              <br>
+                              <select class="form-control" id="selectFrom">
+                                 <option value="0">Select</option>
+                                 <option value="1">EUR (Euro)</option>
+                                 <option value="2">USD (United States Dollar)</option>
+                                 <option value="3">RSD (Serbian Dinar)</option>
+                                 <option value="4">BAM (Bosnian Convertibile Mark)</option>
+                                 <option value="5">CHF (Swiss Franc)</option>
+                                 <option value="6">GBP (British Pound Sterling)</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                           <label for="from">To:</label>
+                           <input type="number" name="to" id="to" value="" class="form-control" disabled>
+                           <div class="form-group">
+                              <br>
+                              <select class="form-control" id="selectTo">
+                                 <option value="0">Select</option>
+                                 <option value="11">EUR (Euro)</option>
+                                 <option value="12">USD (United States Dollar)</option>
+                                 <option value="13">RSD (Serbian Dinar)</option>
+                                 <option value="14">BAM (Bosnian Convertibile Mark)</option>
+                                 <option value="15">CHF (Swiss Franc)</option>
+                                 <option value="16">GBP (British Pound Sterling)</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Jquery, poper, bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="js/currency.js"></script>
+   </body>
+</html>
